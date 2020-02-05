@@ -1,2 +1,2 @@
 #!/bin/bash
-echo cgg -E $CFILE > c
+gcc -E $CFILE > c
