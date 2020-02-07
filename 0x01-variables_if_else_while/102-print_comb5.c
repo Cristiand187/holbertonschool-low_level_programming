@@ -8,31 +8,29 @@
  */
 int main(void)
 {
-	int c, d, e, f;
+int c, d, e, f;
 /*for :*/
 for (c = '0'; c <= '9'; ++c)
 {
-	for (d = '0'; d <= '9'; ++d)
-		{
-	for (e = c; e <= '9'; ++e)
-	{
-		for (f = d+1; f <= '9'; ++f)
-			{
-	       
-			putchar(c);
+for (d = '0'; d <= '9'; ++d)
+{
+for (e = c; e <= '9'; ++e)
+{
+for (f = d+1; f <= '9'; ++f)
+{
+putchar(c);
 putchar(d);
-			putchar(' ');
-	
-		putchar(e);
-		putchar(f);
-		if (f != '9' || e != '9' || c != '9' || d != '8')
-			{
-		putchar(',');
-		putchar(' ');
-		}
-			}
-	}
-	}
+putchar(' ');
+putchar(e);
+putchar(f);
+if (c != '9' || d != '8' || e != '9' || f != '9')
+{
+putchar(',');
+putchar(' ');
+}
+}
+}
+}
 }
 putchar('\n');
 return (0);
