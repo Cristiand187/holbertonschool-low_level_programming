@@ -1,9 +1,11 @@
+
 #include "holberton.h"
 
 /**
- * _islower - Entry point
+ * _islower - Entry point n
  *
- * Return: Always void.
+ * @n: xx.
+ * Return: Always n.
  */
 int _islower(int n)
 {
