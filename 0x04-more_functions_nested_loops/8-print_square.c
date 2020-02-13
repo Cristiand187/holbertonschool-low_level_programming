@@ -13,7 +13,7 @@ void print_square(int n)
 {
 	int a = 0, b = 0, c = 35;
 
-	if (n != 0)
+	if (n > 0)
 	{
 		for (a = 0; a < n; a++)
 		{
