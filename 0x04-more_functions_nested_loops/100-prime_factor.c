@@ -9,7 +9,7 @@ void print_prime_factors(long int);
  */
 int main(void)
 {
-	long int Num = 612852475143;
+	long int Num = 1231952;
 
 	print_prime_factors(Num);
 	return (0);
@@ -39,32 +39,5 @@ void print_prime_factors(long int n)
 		a++;
 	}
 
-	int p = 0, con = 0;
-
-	while (factor > 0)
-	{
-		p = factor % 10;
-		factor = factor / 10;
-		con = con + 1;
-	}
-
-	int fa[con - 1];
-
-	con = 0;
-	while (a > 0)
-	{
-		p = a % 10;
-		a = a / 10;
-		fa[con] = p;
-		con = con + 1;
-	}
-
-	int l = 0;
-
-	for (l = con - 1; l >= 0; l--)
-	{
-		putchar(fa[l] + '0');
-	}
-
-	putchar('\n');
+	printf("%d\n", factor);
 }
