@@ -1,6 +1,7 @@
 #include "holberton.h"
 #include <stdio.h>
 
+void print_Fizz_Buzz(void);
 /**
  * main - check the code for Holberton School students.
  *
@@ -8,10 +9,17 @@
  */
 int main(void)
 {
-	
-    print_Fizz_Buzz();
-    return (0);
+	print_Fizz_Buzz();
+	return (0);
 }
+
+
+/**
+ * print_Fizz_Buzz - xxx
+ *
+ *
+ * Return: Description of the returned value
+ */
 
 void print_Fizz_Buzz(void)
 {
@@ -59,7 +67,7 @@ void print_Fizz_Buzz(void)
 				if (i != 100)
 					putchar(' ');
 			}
-	      }
+		}
 	}
 	printf("\n");
 }
