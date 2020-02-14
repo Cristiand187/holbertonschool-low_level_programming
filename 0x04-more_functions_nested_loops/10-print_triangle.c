@@ -4,22 +4,22 @@
 /**
  * print_triangle - xxx
  *
- * @n: xx
+ * @size: xx
  *
  * Return: Description of the returned value
  */
 
-void print_triangle(int n)
+void print_triangle(int size)
 {
-	int a = 0, b = n, c = 35;
+	int a = 0, b = size, c = 35;
 
-	if (n <= 0)
+	if (size >= 0)
 	{
-		for (a = 0; a < n; a++)
+		for (a = 0; a < size; a++)
 		{
-			for (b = 0; b < n; b++)
+			for (b = 0; b < size; b++)
 			{
-				if (b >= (n - a - 1))
+				if (b >= (size - a - 1))
 					_putchar(c);
 				else
 					_putchar(' ');
