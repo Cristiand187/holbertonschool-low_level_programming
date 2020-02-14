@@ -9,7 +9,7 @@ void print_prime_factors(long int);
  */
 int main(void)
 {
-	long int Num = 1231952;
+	long int Num = 612852475143;
 
 	print_prime_factors(Num);
 	return (0);
@@ -39,5 +39,5 @@ void print_prime_factors(long int n)
 		a++;
 	}
 
-	printf("%u\n", factor);
+	printf("%i\n", factor);
 }
