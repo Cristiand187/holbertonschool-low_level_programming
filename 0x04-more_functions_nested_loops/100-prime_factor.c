@@ -39,5 +39,5 @@ void print_prime_factors(long int n)
 		a++;
 	}
 
-	printf("%d\n", factor);
+	printf("%u\n", factor);
 }
