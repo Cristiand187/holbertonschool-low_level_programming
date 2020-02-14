@@ -13,15 +13,21 @@ void print_triangle(int n)
 {
 	int a = 0, b = n, c = 35;
 
-	for (a = 0; a < n; a++)
+	if (n <= 0)
 	{
-		for (b = 0; b < n; b++)
+		for (a = 0; a < n; a++)
 		{
-			if (b >= (n - a - 1))
-				_putchar(c);
-			else
-				_putchar(' ');
+			for (b = 0; b < n; b++)
+			{
+				if (b >= (n - a - 1))
+					_putchar(c);
+				else
+					_putchar(' ');
+			}
+
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
+	else
+		_putchar('\n');
 }
