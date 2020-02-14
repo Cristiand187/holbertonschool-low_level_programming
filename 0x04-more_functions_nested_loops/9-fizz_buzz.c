@@ -1,6 +1,5 @@
 #include "holberton.h"
 #include <stdio.h>
-void print_Fizz_Buzz(void);
 
 /**
  * main - check the code for Holberton School students.
