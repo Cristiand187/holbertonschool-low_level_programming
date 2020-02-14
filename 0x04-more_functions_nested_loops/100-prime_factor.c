@@ -27,7 +27,7 @@ void print_prime_factors(long int n)
 {
 	int a = 2, factor = 0;
 
-	while (a <= n)
+	while (n != 1)
 	{
 		if ((n % a) == 0)
 		{
