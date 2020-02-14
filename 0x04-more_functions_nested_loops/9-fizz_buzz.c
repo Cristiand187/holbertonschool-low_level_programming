@@ -37,8 +37,7 @@ void print_Fizz_Buzz(void)
 			putchar('u');
 			putchar('z');
 			putchar('z');
-			if (i != 100)
-				putchar(' ');
+			putchar(' ');
 		}
 		else
 		{
@@ -48,8 +47,7 @@ void print_Fizz_Buzz(void)
 				putchar('i');
 				putchar('z');
 				putchar('z');
-				if (i != 100)
-					putchar(' ');
+				putchar(' ');
 			}
 			else if ((i % 5) == 0)
 			{
@@ -57,7 +55,8 @@ void print_Fizz_Buzz(void)
 				putchar('u');
 				putchar('z');
 				putchar('z');
-				putchar(' ');
+				if (i != 100)
+					putchar(' ');
 			}
 			else
 			{
