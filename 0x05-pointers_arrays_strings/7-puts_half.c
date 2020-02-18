@@ -19,7 +19,7 @@ void puts_half(char *str)
 	if ((len % 2) == 0)
 		ini = len / 2;
 	else
-		ini = (len - 1) / 2;
+		ini = (len) - ((len - 1) / 2) + 1;
 
 	for  (l = ini; l < len; l++)
 	{
