@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <string.h>
 #include "holberton.h"
 
 /**
@@ -17,7 +15,7 @@ void puts_half(char *str)
 
 	while (str[len] != '\0')
 		len++;
-	
+
 	if ((len % 2) == 0)
 		ini = len / 2;
 	else
