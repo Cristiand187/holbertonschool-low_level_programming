@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <string.h>
 #include "holberton.h"
 
 /**
@@ -15,7 +13,7 @@ void puts2(char *str)
 
 	int len = 0, l = 0;
 
-	while (str[len] != '\n')
+	while (str[len] != '\0')
 		len++;
 
 	for (l = 0; l < len; l++)
