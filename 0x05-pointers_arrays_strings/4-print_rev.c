@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <string.h>
 #include "holberton.h"
 
 /**
@@ -13,9 +11,12 @@
 void print_rev(char *s)
 {
 
-	int len = strlen(s), l = 0;
+	int len = 0, l = 0;
 
-	for  (l = len; l >=  0; l--)
+	while (s[len] != '\0')
+		len++;
+
+	for  (l = len; l >= 0; l--)
 	{
 		_putchar(s[l]);
 	}
