@@ -26,8 +26,6 @@ char *_strcat(char *dest, char *src)
 		dest[ini + i] = src[i];
 	}
 
-	/* printf("%s\n", dest);*/
-
 	char *p = dest;
 
 	return (p);
