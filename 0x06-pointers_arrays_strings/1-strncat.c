@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 
 /**
  * _strncat - This function is concate two string
@@ -29,8 +28,6 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		dest[ini + i] = src[i];
 	}
-
-	/* printf("%s\n", dest);*/
 
 	char *p = dest;
 
