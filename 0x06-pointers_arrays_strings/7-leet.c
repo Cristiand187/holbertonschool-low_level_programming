@@ -10,24 +10,23 @@
 
 char *leet(char *a)
 {
-	int i = 0, j = 0, k = 0;
-	char letter[] = "aAeEoOtTlL";
-	char replace[] = "4433007711";
+	int i = 0, j = 0;
+	char l[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L', '\0'};
+	int r[] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1', '\0'};
 
 	while (a[i] != '\0')
 	{
-
-		while (letter[j] != '\0')
+		j = 0;
+		while (l[j] != '\0')
 		{
-			if (a[i] == letter[j])
+			if (a[i] == l[j])
 			{
-				k = j;
-				*(a + i) = replace[k];
+				*(a + i) = r[j];
 			}
 			j++;
 		}
 		i++;
 	}
 
-	return (a);
+return (a);
 }
