@@ -8,15 +8,12 @@
  * Return: Description of the returned value
  */
 
-char *leet(char *a);
+char *leet(char *a)
 {
 	int i = 0, j = 0, k = 0;
+	char letter[] = "aAeEoOtTlL";
+	char replace[] = "4433007711";
 
-
-	char letter[] = "oOlLeEaAtT";
-	char replace[] = "0011334477";
-
-	i = 0;
 	while (a[i] != '\0')
 	{
 
@@ -25,7 +22,7 @@ char *leet(char *a);
 			if (a[i] == letter[j])
 			{
 				k = j;
-				a[i] = replace[k];
+				*(a + i) = replace[k];
 			}
 			j++;
 		}
