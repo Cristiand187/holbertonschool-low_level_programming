@@ -6,7 +6,7 @@
  * @dest: Arrays destination the two string/arrays
  * @src: This second string/array
  * @n: It is Number the byts for copy
- * returns
+ * Return: Description of the returned value
  */
 
 char *_strncat(char *dest, char *src, int n)
@@ -29,7 +29,5 @@ char *_strncat(char *dest, char *src, int n)
 		dest[ini + i] = src[i];
 	}
 
-	char *p = dest;
-
-	return (p);
+	return (dest);
 }
