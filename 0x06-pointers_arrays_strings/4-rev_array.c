@@ -1,12 +1,11 @@
 #include "holberton.h"
 
 /**
- * recarse_arrays - This function is concate two string
+ * reverse_array - This function is concate two string
  *
  * @a: Arrays destination the two string/arrays
  * @n: This second string/array
- *
- * returns
+ * Return: Description of the returned value
  */
 
 void reverse_array(int *a, int n)
