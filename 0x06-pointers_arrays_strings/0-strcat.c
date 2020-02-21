@@ -5,8 +5,7 @@
  *
  * @dest: Arrays destination the two string/arrays
  * @src: This second string/array
- *
- * returns
+ * Return: Description of the returned value
  */
 
 char *_strcat(char *dest, char *src)
