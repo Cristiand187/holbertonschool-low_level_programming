@@ -5,8 +5,7 @@
  *
  * @s1: Arrays destination the two string/arrays
  * @s2: This second string/array
- *
- * returns
+ * Return: Description of the returned value
  */
 
 int _strcmp(char *s1, char *s2)
