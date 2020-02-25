@@ -28,5 +28,5 @@ char *_strchr(char *s, char c)
 	if (van == 1)
 		return (s);
 	else
-		return (NULL);
+		return (0);
 }
