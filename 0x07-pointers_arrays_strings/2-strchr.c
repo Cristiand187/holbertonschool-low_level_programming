@@ -19,14 +19,16 @@ char *_strchr(char *s, char c)
 	{
 		if (*s == c)
 		{
-			van = 1;
 			return (s);
 		}
 		s++;
 	}
 
-	if (van == 1)
-		return (s);
+	while (s[van] != '\0')
+		van++;
+
+	if (s[van] == c)
+		return (&s[van]);
 	else
-		return (0);
+		return (NULL);
 }
