@@ -2,10 +2,11 @@
 #include <stdio.h>
 
 /**
- * _print_rev_recursion - This function is the recursion print string pointer reverse.
+ * _strlen_recursion - This function is the print string pointer reverse.
  *
  * @s: String to printer
  *
+ * Return: xxx
  */
 
 int _strlen_recursion(char *s)
