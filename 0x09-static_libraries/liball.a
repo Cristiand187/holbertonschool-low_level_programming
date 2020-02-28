@@ -1,0 +1,474 @@
+!<arch>
+0-isupper.c/    1582915512  1000  1000  100664  189       `
+#include <stdio.h>
+
+/**
+ * _isupper - xxx
+ *
+ * @c: yy
+ * Return: Description of the returned value
+ */
+
+int _isupper(int c)
+{
+	if (c >= 65 &&  c <= 90)
+		return (1);
+	else
+		return (0);
+}
+
+0-memset.c/     1582915512  1000  1000  100664  465       `
+#include "holberton.h"
+#include <stdio.h>
+
+/**
+ * _memset - this function that fills memory with a constant byte.
+ *
+ * @s: Parameter bytes of the memory area pointed.
+ * @b: Parameter the constant byte.
+ * @n: Parameter is number the bytes the reemplace in s
+ *
+ * Return: Returns a pointer to the memory area
+ *
+ */
+
+char *_memset(char *s, char b, unsigned int n)
+{
+
+	unsigned int i = 0;
+
+	for (i = 0; i < n && s[i] != '\n'; i++)
+	{
+		s[i] = b;
+	}
+	return (s);
+}
+
+0-strcat.c/     1582915512  1000  1000  100664  466       `
+#include "holberton.h"
+
+/**
+ * _strcat - This function is concate two string
+ *
+ * @dest: Arrays destination the two string/arrays
+ * @src: This second string/array
+ * Return: Description of the returned value
+ */
+
+char *_strcat(char *dest, char *src)
+{
+
+	int c1 = 0, i = 0, c2 = 0;
+
+	while (dest[c1] != '\0')
+		c1++;
+
+	while (src[c2] != '\0')
+		c2++;
+
+	for (i = 0 ; i < c2 && src[i] != '\0' ; i++)
+		dest[c1 + i] = src[i];
+
+	dest[c1 + i] = '\0';
+
+	return (dest);
+}
+100-atoi.c/     1582917560  1000  1000  100664  0         `
+1-isdigit.c/    1582915512  1000  1000  100664  189       `
+#include <stdio.h>
+
+/**
+ * _isdigit - xxx
+ *
+ * @c: yy
+ * Return: Description of the returned value
+ */
+
+int _isdigit(int c)
+{
+	if (c >= 48 &&  c <= 57)
+		return (1);
+	else
+		return (0);
+}
+
+1-memcpy.c/     1582915512  1000  1000  100664  452       `
+#include "holberton.h"
+
+/**
+ * _memcpy - this function that fills memory with a constant byte.
+ *
+ * @dest: Parameter bytes of the memory area pointed.
+ * @src: Parameter the constant byte.
+ * @n: Parameter is number the bytes the reemplace in s
+ *
+ * Return: Returns a pointer to the memory area
+ *
+ */
+
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+
+	unsigned int i = 0;
+
+	for (i = 0; i < n; i++)
+	{
+		dest[i] = src[i];
+	}
+	return (dest);
+}
+1-strncat.c/    1582915512  1000  1000  100664  469       `
+#include "holberton.h"
+
+/**
+ * _strncat - This function is concate two string
+ *
+ * @dest: Arrays destination the two string/arrays
+ * @src: This second string/array
+ * @n: It is Number the byts for copy
+ * Return: Description of the returned value
+ */
+
+char *_strncat(char *dest, char *src, int n)
+{
+	int c1 = 0, i = 0;
+
+	while (dest[c1] != '\0')
+		c1++;
+
+	for (i = 0 ; i < n && src[i] != '\0' ; i++)
+		dest[c1 + i] = src[i];
+
+	dest[c1 + i] = '\0';
+
+	return (dest);
+}
+
+2-strchr.c/     1582915512  1000  1000  100664  472       `
+#include "holberton.h"
+#include <stdio.h>
+
+/**
+ * _strchr - this function that fills memory with a constant byte.
+ *
+ * @s: Parameter bytes of the memory area pointed.
+ * @c: Parameter the constant byte.
+ *
+ * Return: Returns a pointer to the memory area
+ *
+ */
+
+char *_strchr(char *s, char c)
+{
+	int van = 0;
+
+	while (*s)
+	{
+		if (*s == c)
+		{
+			return (s);
+		}
+		s++;
+	}
+
+	while (s[van] != '\0')
+		van++;
+
+	if (s[van] == c)
+		return (&s[van]);
+	else
+		return (NULL);
+}
+2-strlen.c/     1582915512  1000  1000  100664  195       `
+#include "holberton.h"
+
+/**
+ * _strlen - xxx
+ *
+ * @s: yy
+ * Return: Description of the returned value
+ */
+
+
+int _strlen(char *s)
+{
+	int i = 0;
+
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+}
+
+2-strncpy.c/    1582915512  1000  1000  100664  436       `
+#include "holberton.h"
+
+/**
+ * _strncpy - This function is concate two string
+ *
+ * @dest: Arrays destination the two string/arrays
+ * @src: This second string/array
+ * @n: It is Number the byts for copy
+ * Return: Description of the returned value
+ */
+
+char *_strncpy(char *dest, char *src, int n)
+{
+	int i = 0;
+
+	for (i = 0; i < n && src[i] != '\0'; i++)
+		dest[i] = src[i];
+
+	for ( ; i < n; i++)
+		dest[i] = '\0';
+
+	return (dest);
+}
+3-islower.c/    1582915512  1000  1000  100664  180       `
+
+#include "holberton.h"
+
+/**
+ * _islower - Entry point n
+ *
+ * @n: xx.
+ * Return: Always n.
+ */
+int _islower(int n)
+{
+	if (n >= 97 && n <= 122)
+		return (1);
+	else
+		return (0);
+}
+3-puts.c/       1582915512  1000  1000  100664  262       `
+#include <stdio.h>
+#include <string.h>
+#include "holberton.h"
+
+/**
+ * _puts - xxx
+ *
+ * @str: yy
+ * Return: Description of the returned value
+ */
+
+
+void _puts(char *str)
+{
+	int i = 0;
+
+	while (str[i] != '\0')
+	{
+		_putchar(str[i]);
+		i++;
+	}
+
+	_putchar('\n');
+}
+3-strcmp.c/     1582915512  1000  1000  100664  410       `
+#include "holberton.h"
+
+/**
+ * _strcmp - This function is concate two string
+ *
+ * @s1: Arrays destination the two string/arrays
+ * @s2: This second string/array
+ * Return: Description of the returned value
+ */
+
+int _strcmp(char *s1, char *s2)
+{
+
+	int i = 0;
+
+	while (s1[i] != '\0')
+	{
+		if (s1[i] >  s2[i])
+			return (s1[i] - s2[i]);
+
+		if (s1[i] < s2[i])
+			return (s1[i] - s2[i]);
+
+		i++;
+	}
+	return (0);
+}
+3-strspn.c/     1582915512  1000  1000  100664  518       `
+#include "holberton.h"
+#include <stdio.h>
+
+/**
+ * _strspn - this function that fills memory with a constant byte.
+ *
+ * @s: Parameter bytes of the memory area pointed.
+ * @accept: Parameter the constant byte.
+ *
+ * Return: Returns a pointer to the memory area
+ *
+ */
+
+unsigned int _strspn(char *s, char *accept)
+{
+	unsigned int i = 0, j = 0;
+
+	while (s[i] != '\0')
+	{
+		j = 0;
+		while (accept[j] != '\0')
+		{
+			if (s[i] == accept[j])
+				break;
+
+			j++;
+		}
+		if (!accept[j])
+			return (i);
+
+		i++;
+	}
+	return (i);
+}
+4-isalpha.c/    1582915512  1000  1000  100664  205       `
+#include "holberton.h"
+
+/**
+ * _isalpha - Entry point n
+ *
+ * @n: xx.
+ * Return: Always n.
+ */
+int _isalpha(int n)
+{
+	if ((n >= 97 && n <= 122) || (n >= 65 && n <= 90))
+		return (1);
+	else
+		return (0);
+}
+
+4-strpbrk.c/    1582915512  1000  1000  100664  466       `
+#include "holberton.h"
+
+/**
+ * _strpbrk - this function that fills memory with a constant byte.
+ *
+ * @s: Parameter bytes of the memory area pointed.
+ * @accept: Parameter the constant byte.
+ *
+ * Return: Returns a pointer to the memory area
+ *
+ */
+
+char *_strpbrk(char *s, char *accept)
+{
+	int i = 0, j = 0;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		for (j = 0;  accept[j] != '\0'; j++)
+		{
+			if (s[i] == accept[j])
+			{
+				return (&s[i]);
+			}
+		}
+	}
+	return (0);
+}
+5-strstr.c/     1582915512  1000  1000  100664  647       `
+#include "holberton.h"
+
+/**
+ * _strstr - this function that fills memory with a constant byte.
+ *
+ * @haystack: Parameter bytes of the memory area pointed.
+ * @needle: Parameter the constant byte.
+ *
+ * Return: Returns a pointer to the memory area
+ *
+ */
+
+char *_strstr(char *haystack, char *needle)
+{
+	int i = 0, j = 0, van = 0;
+	char *p;
+
+	for (i = 0; haystack[i] != '\0'; i++)
+	{
+		if (haystack[i] == needle[0])
+		{
+			p = &haystack[i];
+			for (j = 1;  needle[j] != '\0'; j++)
+			{
+				if (haystack[i + j] != needle[j]
+				    && haystack[i + j] != '\0')
+				{
+					van = 1;
+				}
+			}
+		}
+	}
+	if (van == 0)
+		return (p);
+	else
+		return (0);
+}
+
+6-abs.c/        1582915512  1000  1000  100664  148       `
+#include "holberton.h"
+#include <math.h>
+
+/**
+ * _abs - Entry point n
+ *
+ * @n: xx.
+ * Return: Always n.
+ */
+int _abs(int n)
+{
+	return (fabs(n));
+}
+9-strcpy.c/     1582915512  1000  1000  100664  330       `
+#include <stdio.h>
+#include <string.h>
+#include "holberton.h"
+
+/**
+ * _strcpy - xxx
+ *
+ * @dest: this is des
+ * @src: zz
+ * Return: Description of the returned value
+ */
+
+
+char *_strcpy(char *dest, char *src)
+{
+
+	int i = 0, n = 0;
+
+	while (src[n] != '\0')
+		n++;
+
+	for (i = 0; i <= n; i++)
+		dest[i] = src[i];
+
+	return (dest);
+
+}
+_putchar.c/     1582915512  1000  1000  100664  247       `
+#include <unistd.h>
+
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
+
