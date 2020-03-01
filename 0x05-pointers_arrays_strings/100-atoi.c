@@ -11,21 +11,22 @@
 int _atoi(char *s)
 {
 
-	int n = 0, Signo = 1, sw = 0;
+	int n = 0, Signo = -1, sw = 0, i = 0;
 
-	while (*s++)
+	while (s[i] != '\0')
 	{
-		if (*s == '-')
+		if (s[i] == '-')
 			Signo = Signo * -1;
 
-		if (*s >= '0' && *s <= '9')
+		if (s[i] >= '0' && s[i] <= '9')
 		{
-			n = (n * 10) + (*s - '0');
+			n = (n * 10) - (s[i] - '0');
 			sw = 1;
 		}
 		else if (sw == 1)
 			break;
 
+		i++;
 	}
 
 	return (n * Signo);
