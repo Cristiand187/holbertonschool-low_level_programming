@@ -13,7 +13,8 @@ int _atoi(char *s)
 
 	int n = 0, Signo = 1, sw = 0;
 
-	do {
+	while (*s++)
+	{
 		if (*s == '-')
 			Signo = Signo * -1;
 
@@ -25,7 +26,7 @@ int _atoi(char *s)
 		else if (sw == 1)
 			break;
 
-	} while (*s++);
+	}
 
 	return (n * Signo);
 }
