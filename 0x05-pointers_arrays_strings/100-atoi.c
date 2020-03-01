@@ -1,48 +1,29 @@
-#include <stdio.h>
-#include <string.h>
 #include "holberton.h"
 
 /**
- * _strcpy - xxx
+ * _atoi - This function that convert a string to an integer
  *
- * @dest: this is des
- * @src: zz
- * Return: Description of the returned value
+ * @s: number in the string can be preceded by an infinite number of characters
+ * Return: Number into the string
  */
 
 
 int _atoi(char *s)
 {
 
-	int i = 0, n = 0, pn = 0;
+	int n = 0, Signo = 1;
 
-	int Signo = 1;
-
-	while (s[n] != '\0')
-		n++;
-
-	for (i = 0; i <= n; i++)
-	{
-		if (s[i] > '0' && s[i] < '9')
-		{
-			pn = i;
-			i = n;
-		}
-	}
-
-	printf("%d\n", pn);
-	
-	for (i = 0; i <= pn; i++)
-	{
-		if (s[i] == '-')
-		{
+	do {
+		if (*s == '-')
 			Signo = Signo * -1;
-		   
-		}
 
-	}
+		else if (*s >= '0' && *s <= '9')
+			n = (n * 10) + (*s - '0');
 
-	printf("%d\n", Signo);
+		else if (n > 0)
+			break;
 
-	return (1);
+	} while (*s++);
+
+	return (n * Signo);
 }
