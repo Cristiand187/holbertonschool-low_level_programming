@@ -17,7 +17,7 @@ int _atoi(char *s)
 		if (*s == '-')
 			Signo = Signo * -1;
 
-		else if (*s >= '0' && *s <= '9')
+		else if (*s >= '0' && *s <= '9' && *s != '0')
 			n = (n * 10) + (*s - '0');
 
 		else if (n > 0)
