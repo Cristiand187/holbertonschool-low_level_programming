@@ -31,7 +31,7 @@ char *_strdup(char *str)
 		array[i] = '\0';
 	}
 	else
-		return(NULL);
+		return (NULL);
 
 	return (array);
 	free(array);
