@@ -2,15 +2,17 @@
 #include <stdlib.h>
 
 /**
- * _strdup - This function create a arrays
+ * str_concat - This function create a arrays
  *
- * @str: string for content the arrays
+ * @s1: string for content the arrays
+ * @s2: string s2 content the arrays
  * Return: arrays or null
  */
 
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int i, size1 = 0, size2 = 0, j = 0;
+	unsigned int i = 0, j = 0, size1 = 0, size2 = 0;
+	char *array;
 
 	while (s1[size1] != '\0')
 		size1++;
@@ -18,7 +20,9 @@ char *str_concat(char *s1, char *s2)
 	while (s2[size2] != '\0')
 		size2++;
 
-	char *array = malloc((size1 + size2 + 1) * sizeof(char));
+
+	array = malloc((size1 + size2) * sizeof(char));
+
 
 	if (array == NULL)
 		return (NULL);
@@ -28,7 +32,7 @@ char *str_concat(char *s1, char *s2)
 		array[i] = s1[i];
 	}
 
-	for (j = 0; i < size2; j++)
+	for (j = 0; j < size2; j++)
 	{
 		array[i + j] = s2[j];
 	}
