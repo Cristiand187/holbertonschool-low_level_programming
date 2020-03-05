@@ -28,10 +28,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	while (s2[size2] != '\0')
 		size2++;
 
-	if (n < size2)
+	if (n >= size2)
+		array = malloc((size1 + size2 + 1) * sizeof(char));
+	else
+	{
 		size2 = n;
-
-	array = malloc((size1 + size2 + 1) * sizeof(char));
+		array = malloc((size1 + n + 1) * sizeof(char));
+	}
 
 	if (array == NULL)
 		return (NULL);
