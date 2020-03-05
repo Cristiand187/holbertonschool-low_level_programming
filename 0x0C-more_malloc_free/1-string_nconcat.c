@@ -50,7 +50,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		array[i + j] = s2[j];
 	}
 
-       array[i + j] = '\0';
+	array[i + j] = '\0';
 
-       return (array);
+	return (array);
 }
