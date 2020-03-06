@@ -22,25 +22,15 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		array = malloc(new_size);
 		if (array == NULL)
 		{
-			free(ptr);
 			return (NULL);
 		}
+		free(ptr);
 	}
 
 	if (new_size == 0 && ptr != NULL)
 	{
 		free(ptr);
 		return (NULL);
-	}
-
-	if (new_size < old_size)
-	{
-		array = malloc(new_size);
-		if (array == NULL)
-		{
-			free(ptr);
-			return (NULL);
-		}
 	}
 
 	return (array);
