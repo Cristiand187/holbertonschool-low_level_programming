@@ -19,7 +19,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 
 	if (new_size > old_size || ptr == NULL)
 	{
-		array = malloc(new_size);
+		array = malloc(new_size + 1);
 		if (array == NULL)
 		{
 			free(ptr);
