@@ -1,6 +1,7 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
 
+
 /**
  * struct dog - Short description
  * @name: First member
@@ -15,5 +16,7 @@ struct dog
 	float age;
 	char *owner;
 };
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
 
 #endif /* HOLBERTON_H */
