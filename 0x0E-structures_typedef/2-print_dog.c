@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * init_dog - This function create a arrays
+ * print_dog - This function create a arrays
  *
  * @d: string for content the arrays
  */
