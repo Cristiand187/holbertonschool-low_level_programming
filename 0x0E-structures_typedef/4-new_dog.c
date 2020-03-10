@@ -8,6 +8,7 @@
  * @name: string s2 content the arrays
  * @age: pointer or null
  * @owner: xx
+ * Return: pointer struct
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -20,7 +21,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	(*d).name = name;
 	(*d).age = age;
-        (*d).owner = owner;
+	(*d).owner = owner;
 
 	return (d);
 }
