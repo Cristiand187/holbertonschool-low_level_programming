@@ -31,6 +31,7 @@ int (*get_op_func(char *s))(int, int)
 		}
 		i++;
 	}
-
-	return (0);
+	printf("%s\n", "Error");
+	exit(99);
+	return (NULL);
 }

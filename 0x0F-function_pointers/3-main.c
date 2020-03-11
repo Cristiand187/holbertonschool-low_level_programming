@@ -19,19 +19,14 @@ int main(int argc, char *argv[])
 		printf("%s\n", "Error");
 		exit(98);
 	}
-	/*
-	  if (argv[2] != "+" && argv[2] != "-" && argv[2] != "*" && argv[2] == "/"
-	    && argv[2] == "%")
+
+	if ((strcmp(argv[2], "/") == 0 || strcmp(argv[2], "%") == 0)
+		&& atoi(argv[3]) == 0)
 	{
 		printf("%s\n", "Error");
-                exit (99);
+		exit(100);
 	}
-	if ((argv[2] == "/" || argv[2] == "%") && argv[3] == "0")
-	{
-                printf("%s\n", "Error");
-                exit (100);
-		}
-	*/
+
 	if (argc > 0)
 	{
 		calc = (*get_op_func(argv[2]))(atoi(argv[1]), atoi(argv[3]));
