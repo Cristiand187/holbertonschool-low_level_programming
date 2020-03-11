@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include "3-calc.h"
+#include <string.h>
 
 /**
  * main - This function print name programs
