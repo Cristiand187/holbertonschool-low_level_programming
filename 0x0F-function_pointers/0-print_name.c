@@ -1,6 +1,27 @@
 #include <stdio.h>
 #include "function_pointers.h"
 
+
+/**
+ * _strlen - xxx
+ *
+ * @s: yy
+ * Return: Description of the returned value
+ */
+
+
+int _strlen(char *s)
+{
+	int i = 0;
+
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+}
+
+
 /**
  * print_name - funtion pointer print
  *
@@ -10,6 +31,10 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-	if (name != '\0')
+	int len = 0;
+
+	len = _strlen(name);
+
+	if (len != 0)
 		(*f)(name);
 }
