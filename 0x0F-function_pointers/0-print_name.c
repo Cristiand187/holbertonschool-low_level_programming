@@ -31,10 +31,6 @@ int _strlen(char *s)
 
 void print_name(char *name, void (*f)(char *))
 {
-	int len = 0;
-
-	len = _strlen(name);
-
-	if (name != NULL || len != 0)
+	if (name != NULL && f != NULL)
 		(*f)(name);
 }
