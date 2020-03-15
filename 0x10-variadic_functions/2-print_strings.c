@@ -4,33 +4,39 @@
 #include "variadic_functions.h"
 
 /**
- * print_numbers - function that printer the num of all its parameters
+ * print_strings - function that printer the string
  *
- * @n: is variable, ugliness is constant
- * @separator: is string separator the numbers
+ * @n: is number the string
+ * @separator: is string separator the string
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
+	unsigned int i = 0;
 	va_list ap;
-	unsigned int i;
-	char *str;
+	char *s;
 
-	if (n != 0)
+	if (separator == NULL)
+		separator = "";
+
+	va_start(ap, n);
+	while (i < n)
 	{
-
-		va_start(ap, n);
-
-		for (i = 0; i < n; i++)
+		s = va_arg(ap, char *);
+		if (i != n - 1)
 		{
-			str = va_arg(ap, char *);
-			if (strcmp(separator, "") == 0)
-				printf("%s ", str);
-			else
-			printf("%s%s ", str, ((i != n - 1) ? separator : ""));
+			if (s == NULL)
+				s = "(nil)";
+			printf("%s%s", s, separator);
 		}
-		va_end(ap);
-		printf("\n");
-
+		else
+		{
+			if (s == NULL)
+				s = "(nil)";
+			printf("%s", s);
+		}
+		i++;
 	}
+	va_end(ap);
+	printf("\n");
 }
