@@ -12,31 +12,21 @@
 
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
+	unsigned int i = 0;
 	va_list ap;
-	unsigned int i, num = 0;
 
 	if (separator == NULL)
 		separator = "";
 
 	va_start(ap, n);
-
-	if (n > 0)
+	while (i < n)
 	{
-
-		for (i = 0; i < n; i++)
-		{
-			num = va_arg(ap, int);
-
-			if (i != n - 1)
-				printf("%i%s ", num, separator);
-			else
-				printf("%i ", num);
-		}
-
+		if (i != n - 1)
+			printf("%d%s", va_arg(ap, int), separator);
+		else
+			printf("%d", va_arg(ap, int));
+		i++;
 	}
-	printf("\n");
-
-
 	va_end(ap);
-
+	printf("\n");
 }
