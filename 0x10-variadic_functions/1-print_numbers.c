@@ -27,7 +27,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			if (separator)
 				printf("%i%s ", num, separator);
 			else
-				printf("%i%s ", num);
+				printf("%i ", num);
 		}
 
 	}
