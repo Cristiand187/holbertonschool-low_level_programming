@@ -1,0 +1,23 @@
+#include "holberton.h"
+#include <stdio.h>
+
+/**
+ * _strlen_recursion - This function is the print string pointer reverse.
+ *
+ * @s: String to printer
+ *
+ * Return: xxx
+ */
+
+int _pow_recursion(int x, int y)
+{
+	if (y > 0)
+	{
+		y--;
+		return (x * _pow_recursion(x, y));
+	}
+	else if (y < 0)
+		return (-1);
+	else
+		return (1);
+}

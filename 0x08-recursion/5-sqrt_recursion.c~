@@ -1,0 +1,29 @@
+#include "holberton.h"
+#include <stdio.h>
+
+/**
+ * _pow_recursion - This function is the print string pointer reverse.
+ *
+ * @x: String to printer
+ * @y: yyy
+ *
+ * Return: xxx
+ */
+int function(int n, int base);
+
+
+int function(int n, int base)
+{
+	if (n * n == base)
+		return (n);
+	else if (n * n > base)
+		return (-1);
+	else
+		return (function(n + 1, base));
+}
+
+
+int _sqrt_recursion(int n)
+{
+	return (function(1, n));
+}
