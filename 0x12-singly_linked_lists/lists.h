@@ -25,6 +25,6 @@ list_t *add_node(list_t **head, const char *str);
 
 int _strlen(char *s);
 
-char *_strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src);
 
 #endif /* HOLBERTON_H */
