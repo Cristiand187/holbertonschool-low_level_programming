@@ -3,6 +3,29 @@
 #include <stdio.h>
 #include "lists.h"
 
+/**
+ * _strcpy - copy to string
+ *
+ * @dest: this is des
+ * @src: zz
+ * Return: Description of the returned value
+ */
+
+
+char *_strcpy(char *dest, char *src)
+{
+
+	int i = 0, n = 0;
+
+	while (src[n] != '\0')
+		n++;
+
+	for (i = 0; i <= n; i++)
+		dest[i] = src[i];
+
+	return (dest);
+
+}
 
 /**
  * _strlen - This function is count number charateres
@@ -49,7 +72,7 @@ list_t *add_node(list_t **head, const char *str)
 	if (new->str == NULL)
 		return (NULL);
 
-	strcpy(new->str, strdup(str));
+	_strcpy(new->str, strdup(str));
 
 	new->len = len;
 	new->next = *head;
