@@ -6,7 +6,7 @@
 
 /**
  * pop_listint - function that deletes the head node of a list.
- * @head: punter to punter to list
+ * @head: Double pointer to list
  *
  * Return: value the head node’s.
  */
@@ -21,9 +21,14 @@ int pop_listint(listint_t **head)
 
 	pop = *head;
 
-	n = pop->n;
-	*head = pop->next;
-	free(pop);
+	if (pop != NULL)
+	{
+		n = pop->n;
+		*head = pop->next;
+		free(pop);
 
-	return (n);
+		return (n);
+	}
+
+	return (0);
 }
