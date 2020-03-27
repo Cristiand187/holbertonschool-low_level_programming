@@ -13,8 +13,12 @@ void print_binary(unsigned long int n)
 {
 	unsigned int mask = 8388608, ban = 0;
 
+
 	if (n == 0)
+	{
 		_putchar('0');
+		return;
+	}
 
 	while (mask > 0)
 	{
