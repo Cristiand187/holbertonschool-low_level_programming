@@ -25,7 +25,7 @@ int create_file(const char *filename, char *text_content)
 
 	if (fd < 0)
 	{
-		return (0);
+		return (-1);
 	}
 
 	if (text_content == NULL)
@@ -40,7 +40,7 @@ int create_file(const char *filename, char *text_content)
 
 	close(fd);
 
-	if (len == -1 || len != num_bytes)
+	if (num_bytes < 0 || len != num_bytes)
 		return (-1);
 
 	return (1);
