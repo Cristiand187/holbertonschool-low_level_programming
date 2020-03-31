@@ -1,4 +1,7 @@
 #include <fcntl.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <stdio.h>
 #include "holberton.h"
 
 /**
@@ -38,7 +41,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	while (i < num_bytes)
 	{
-		putchar(buf[i]);
+		_putchar(buf[i]);
 		i++;
 	}
 
