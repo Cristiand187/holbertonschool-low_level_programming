@@ -1,3 +1,7 @@
+#include <fcntl.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <stdio.h>
 #include "holberton.h"
 void closer(int arg_files);
 /**
