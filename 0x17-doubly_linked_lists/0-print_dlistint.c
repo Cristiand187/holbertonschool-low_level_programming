@@ -13,11 +13,6 @@ size_t print_dlistint(const dlistint_t *h)
 	const dlistint_t *current;
 	size_t n_nodes = 0;
 
-	if (h == NULL)
-	{
-		return (EXIT_FAILURE);
-	}
-
 	current = h;
 
 	while (current != NULL)
