@@ -10,18 +10,21 @@
  */
 size_t print_dlistint(const dlistint_t *h)
 {
-	size_t n_nodes;
+	dlistint_t *current;
+	size_t n_nodes = 0;
 
 	if (h == NULL)
 	{
 		return (EXIT_FAILURE);
 	}
 
-	while (h != NULL)
+	current = h;
+
+	while (current != NULL)
 	{
 		printf("%d\n", h->n);
 		n_nodes += 1;
-		h = h->next;
+		current = current->next;
 	}
 
 	return (n_nodes);
