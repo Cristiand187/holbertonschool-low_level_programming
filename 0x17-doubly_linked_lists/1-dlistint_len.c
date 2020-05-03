@@ -10,17 +10,15 @@
  */
 size_t dlistint_len(const dlistint_t *h)
 {
-	size_t n_nodes;
+	const dlistint_t *current;
+	size_t n_nodes = 0;
 
-	if (h == NULL)
-	{
-		return (EXIT_FAILURE);
-	}
+	current = h;
 
-	while (h != NULL)
+	while (current != NULL)
 	{
 		n_nodes += 1;
-		h = h->next;
+		current = current->next;
 	}
 
 	return (n_nodes);
