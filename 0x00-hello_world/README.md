@@ -1,6 +1,6 @@
 # 0x00. C - Hello, World
 
-## Resources:books:
+## :books: Resources
 Read or watch:
 * [Everything you need to know to start with C](https://intranet.hbtn.io/rltoken/JgP0ALD8CNZM19FLZQetMQ)
 * [Dennis Ritchie](https://intranet.hbtn.io/rltoken/vY9KI1Ai38BUuydEfadtaA)
@@ -14,7 +14,7 @@ Read or watch:
 * [Linus Torvalds on C vs. C++](https://intranet.hbtn.io/rltoken/8rYFkn82I0QlSygvC0u2Jw)
 
 ---
-## Learning Objectives:bulb:
+## :bulb: Learning Objectives
 What you should learn from this project:
 
 * Why C programming is awesome (don’t forget to tweet today, with the hashtag #cisfun :))
@@ -32,6 +32,7 @@ What you should learn from this project:
 * How does the main function influence the return value of the program
 
 ---
+## Task
 
 ### [0. Preprocessor](./0-preprocessor)
 Write a script that runs a C file through the preprocessor and save the result into another file.
