@@ -31,3 +31,10 @@
 * [0x16. C - Simple Shell](https://github.com/Cristiand187/holbertonschool-low_level_programming/tree/master/0x16-Simple_Shell)
 * [0x17. C - Doubly linked lists](https://github.com/Cristiand187/holbertonschool-low_level_programming/tree/master/0x17-doubly_linked_lists)
 * [0x18. C - Dynamic libraries](https://github.com/Cristiand187/holbertonschool-low_level_programming/tree/master/0x18-dynamic_libraries)
+
+
+
+---
+
+## Author
+* **Cristian David Pineda Vargas** - [Cristiand187](https://github.com/Cristiand187)
