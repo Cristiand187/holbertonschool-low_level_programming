@@ -17,7 +17,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 
 	new_hash_teble->size = size;
 
-	new_node = malloc(sizeof(hash_node_t) * 1024);
+	new_node = malloc(sizeof(hash_node_t *) * 1024);
 	if (new_node == NULL)
 	{
 		free(new_hash_teble);
