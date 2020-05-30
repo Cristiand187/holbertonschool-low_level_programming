@@ -8,7 +8,6 @@
 hash_table_t *hash_table_create(unsigned long int size)
 {
 	hash_table_t *new_hash_teble;
-	hash_node_t **new_node;
 	unsigned long int idx = 0;
 
 	new_hash_teble = malloc(sizeof(hash_table_t));
@@ -17,8 +16,8 @@ hash_table_t *hash_table_create(unsigned long int size)
 
 	new_hash_teble->size = size;
 
-	new_node = malloc(sizeof(hash_node_t *) * 1024);
-	if (new_node == NULL)
+	new_hash_teble->array = malloc(sizeof(hash_node_t *) * 1024);
+	if (new_hash_teble->array == NULL)
 	{
 		free(new_hash_teble);
 		new_hash_teble = NULL;
@@ -27,10 +26,9 @@ hash_table_t *hash_table_create(unsigned long int size)
 
 	while (idx < size)
 	{
-		new_node[idx] = (NULL);
+		new_hash_teble->array[idx] = (NULL);
 		idx++;
 	}
-	new_hash_teble->array = new_node;
 
 	return (new_hash_teble);
 }
