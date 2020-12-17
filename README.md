@@ -4,7 +4,7 @@
 
 ![Python](https://raw.githubusercontent.com/cristiand187/holbertonschool-low_level_programming/master/cisfun.jpg)
 
-## Projects
+## Hatching out
 
 * [0x00. C - Hello, World](https://github.com/Cristiand187/holbertonschool-low_level_programming/tree/master/0x00-hello_world)
 * [0x01. C - Variables, if, else, while](https://github.com/Cristiand187/holbertonschool-low_level_programming/tree/master/0x01-variables_if_else_while)
@@ -24,15 +24,25 @@
 * [0x0F. C - Function pointers](https://github.com/Cristiand187/holbertonschool-low_level_programming/tree/master/0x0F-function_pointers)
 * [0x10. C - Variadic functions](https://github.com/Cristiand187/holbertonschool-low_level_programming/tree/master/0x10-variadic_functions)
 * [0x11. C - printf](https://github.com/Cristiand187/holbertonschool-low_level_programming/tree/master/0x11-printf)
+* [0x14. C - Bit manipulation](https://github.com/Cristiand187/holbertonschool-low_level_programming/tree/master/0x14-bit_manipulation)
+* [0x18. C - Dynamic libraries](https://github.com/Cristiand187/holbertonschool-low_level_programming/tree/master/0x18-dynamic_libraries)
+* [0x1C. C - Makefiles](https://github.com/Cristiand187/holbertonschool-low_level_programming/tree/master/0x1C-makefiles)
+
+## Data structures and Algorithms
+
 * [0x12. C - Singly linked lists](https://github.com/Cristiand187/holbertonschool-low_level_programming/tree/master/0x12-singly_linked_lists)
 * [0x13. C - More singly linked lists](https://github.com/Cristiand187/holbertonschool-low_level_programming/tree/master/0x13-more_singly_linked_lists)
-* [0x14. C - Bit manipulation](https://github.com/Cristiand187/holbertonschool-low_level_programming/tree/master/0x14-bit_manipulation)
+* [0x17. C - Doubly linked lists](https://github.com/Cristiand187/holbertonschool-low_level_programming/tree/master/0x17-doubly_linked_lists)
+* [0x19. C - Stacks, Queues - LIFO, FIFO](https://github.com/andresjjn/monty)
+* [0x1A. C - Hash tables](https://github.com/Cristiand187/holbertonschool-low_level_programming/tree/master/0x1A-hash_tables)
+* [0x1B. C - Sorting algorithms & Big O](https://github.com/Cristiand187/holbertonschool-low_level_programming/tree/master/0x1B-Sorting_algorithms_Big_O)
+* [0x1D. C - Binary trees](https://github.com/mecomonteshbtn/binary_trees)
+* [0x1E. C - Search Algorithms](https://github.com/Cristiand187/holbertonschool-low_level_programming/tree/master/0x1E-search_algorithms)
+
+## Linux and Unix system programming
+
 * [0x15. C - File I/O](https://github.com/Cristiand187/holbertonschool-low_level_programming/tree/master/0x15-file_io)
 * [0x16. C - Simple Shell](https://github.com/Cristiand187/holbertonschool-low_level_programming/tree/master/0x16-Simple_Shell)
-* [0x17. C - Doubly linked lists](https://github.com/Cristiand187/holbertonschool-low_level_programming/tree/master/0x17-doubly_linked_lists)
-* [0x18. C - Dynamic libraries](https://github.com/Cristiand187/holbertonschool-low_level_programming/tree/master/0x18-dynamic_libraries)
-
-
 
 ---
 
