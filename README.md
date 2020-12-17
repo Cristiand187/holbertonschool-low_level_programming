@@ -4,7 +4,7 @@
 
 ![Python](https://raw.githubusercontent.com/cristiand187/holbertonschool-low_level_programming/master/cisfun.jpg)
 
-## Hatching out
+## :books: Projecs - Hatching out
 
 * [0x00. C - Hello, World](https://github.com/Cristiand187/holbertonschool-low_level_programming/tree/master/0x00-hello_world)
 * [0x01. C - Variables, if, else, while](https://github.com/Cristiand187/holbertonschool-low_level_programming/tree/master/0x01-variables_if_else_while)
@@ -28,7 +28,7 @@
 * [0x18. C - Dynamic libraries](https://github.com/Cristiand187/holbertonschool-low_level_programming/tree/master/0x18-dynamic_libraries)
 * [0x1C. C - Makefiles](https://github.com/Cristiand187/holbertonschool-low_level_programming/tree/master/0x1C-makefiles)
 
-## Data structures and Algorithms
+## :books: Projecs - Data structures and Algorithms
 
 * [0x12. C - Singly linked lists](https://github.com/Cristiand187/holbertonschool-low_level_programming/tree/master/0x12-singly_linked_lists)
 * [0x13. C - More singly linked lists](https://github.com/Cristiand187/holbertonschool-low_level_programming/tree/master/0x13-more_singly_linked_lists)
@@ -39,7 +39,7 @@
 * [0x1D. C - Binary trees](https://github.com/mecomonteshbtn/binary_trees)
 * [0x1E. C - Search Algorithms](https://github.com/Cristiand187/holbertonschool-low_level_programming/tree/master/0x1E-search_algorithms)
 
-## Linux and Unix system programming
+## :books: Projecs - Linux and Unix system programming
 
 * [0x15. C - File I/O](https://github.com/Cristiand187/holbertonschool-low_level_programming/tree/master/0x15-file_io)
 * [0x16. C - Simple Shell](https://github.com/Cristiand187/holbertonschool-low_level_programming/tree/master/0x16-Simple_Shell)
